@@ -8,7 +8,7 @@
     <string name="remove_a_pool">Remove Pool</string>
     <string name="add_a_pool">Add a Pool</string>
     <string name="name_hint">Example: Rabat Pool</string>
-    <string name="capacity_hint">Example: 50</string>
+    <string name="capacity_hint">Example: 50000</string>
     <string name="add_pool">Add Pool</string>
     <string name="name_label">Pool Name</string>
     <string name="capacity_label">Total Pool Capacity (litres)</string>
