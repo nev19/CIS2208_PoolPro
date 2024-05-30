@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pool">#47ACD6</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="pool_2">#05679C</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pool_blue">#288AB1</color>
+    <color name="red">#D51C32</color>
+    <color name="grey">#F1F1F1</color>
+    <color name="green">#41B12D</color>
+</resources>

@@ -1,0 +1,20 @@
+    <resources xmlns:tools="http://schemas.android.com/tools">
+        <!-- Base application theme. -->
+        <style name="Theme.PoolProApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+            <!-- Primary brand color. -->
+            <item name="colorPrimary">@color/pool</item>
+            <item name="colorPrimaryVariant">@color/pool_2</item>
+            <item name="colorOnPrimary">@color/black</item>
+            <!-- Secondary brand color. -->
+            <item name="colorSecondary">@color/teal_200</item>
+            <item name="colorSecondaryVariant">@color/teal_200</item>
+            <item name="colorOnSecondary">@color/black</item>
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+            <!-- Customize your theme here. -->
+        </style>
+
+        <style name="RedButton" parent="Widget.MaterialComponents.Button">
+            <item name="android:background">@color/red</item>
+        </style>
+    </resources>

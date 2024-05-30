@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.poolproapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tips"
+        android:name="com.example.poolproapp.ui.tips.TipsFragment"
+        android:label="@string/title_tips"
+        tools:layout="@layout/fragment_tips" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.poolproapp.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.poolproapp.ui.menu.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_menuFragment_to_refillFragment"
+            app:destination="@id/navigation_refill" />
+        <action
+            android:id="@+id/action_menuFragment_to_acidityFragment"
+            app:destination="@id/navigation_acidity" />
+        <action
+            android:id="@+id/action_menuFragment_to_chlorineFragment"
+            app:destination="@id/navigation_chlorine" />
+        <action
+            android:id="@+id/action_menuFragment_to_requestFragment"
+            app:destination="@id/navigation_request" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_refill"
+        android:name="com.example.poolproapp.ui.refill.RefillFragment"
+        android:label="@string/refill_notifications_settings"
+        tools:layout="@layout/fragment_refill" />
+
+    <fragment
+        android:id="@+id/navigation_acidity"
+        android:name="com.example.poolproapp.ui.acidity.AcidityFragment"
+        android:label="@string/calculate_acidity"
+        tools:layout="@layout/fragment_acidity" />
+
+    <fragment
+        android:id="@+id/navigation_chlorine"
+        android:name="com.example.poolproapp.ui.chlorine.ChlorineFragment"
+        android:label="@string/calculate_chlorine"
+        tools:layout="@layout/fragment_chlorine" />
+
+    <fragment
+        android:id="@+id/navigation_request"
+        android:name="com.example.poolproapp.ui.request.RequestFragment"
+        android:label="@string/request_water"
+        tools:layout="@layout/fragment_request">
+        <action
+            android:id="@+id/action_navigation_request_to_addSupplier"
+            app:destination="@id/navigation_supplier" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.poolproapp.ui.add.AddFragment"
+        android:label="@string/add_a_pool"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_supplier"
+        android:name="com.example.poolproapp.ui.add_supplier.AddSupplierFragment"
+        android:label="@string/add_supplier_email"
+        tools:layout="@layout/fragment_add_supplier">
+        <action
+            android:id="@+id/action_addSupplierFragment_to_navigation_request"
+            app:destination="@id/navigation_request" />
+    </fragment>
+
+</navigation>
